@@ -611,7 +611,7 @@ p.footer {
 
             function onViewableStart() {
                 if (dapi.isViewable()) {
-                    dapi.removeEventListener("ready", onViewableStart);
+                    dapi.removeEventListener("viewableChange", onViewableStart);
                     showMyAd();
                 }
             }
